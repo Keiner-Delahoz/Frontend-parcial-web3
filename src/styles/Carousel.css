@@ -1,0 +1,10 @@
+.carousel-container {
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+}
+
+.carousel {
+   height: 400px;
+   /* margin-block-end: 100px; */
+}
