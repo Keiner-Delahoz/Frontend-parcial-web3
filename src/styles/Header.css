@@ -1,0 +1,178 @@
+.header {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   font-family: 'Poppins', sans-serif;
+}
+
+.dropdown-item {
+   padding: 0 !important;
+}
+
+a {
+   text-decoration: none;
+   color: #392d3f;
+}
+
+.fa {
+   color: #1a76d1;
+   margin-right: 10px;
+}
+
+.topbar {
+   display: flex;
+   width: 100%;
+   align-items: center;
+   border-bottom: 1px solid #eeeeee;
+   padding: 15px 0;
+}
+
+.topbar .container {
+   display: flex;
+   justify-content: space-between;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.top-link a,
+.top-contact a {
+   transition: 0.2s color ease-in;
+}
+
+.top-link a:hover,
+.top-contact a:hover {
+   color: #1a76d1;
+   transition: .3s text-decoration ease-out;
+   transition: .3s color ease-in;
+}
+
+.top-link,
+.top-contact {
+   display: flex;
+   gap: 20px;
+   font-size: 14px;
+   margin: 0;
+   padding: 0;
+   flex-wrap: wrap;
+}
+
+/* Menu del header */
+.nav {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 1rem;
+}
+
+.icon-menu {
+   display: none;
+   width: 2rem;
+   cursor: pointer;
+}
+
+.logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo img {
+   width: 40px;
+   height: 40px;
+}
+
+.logo p {
+   font-size: 1.8rem;
+   font-weight: bold;
+   margin: 0;
+}
+
+.logo p .slogan {
+   color: #1a76d1;
+   font-weight: bold;
+}
+
+/* links de navegación */
+.menu {
+   display: flex;
+   gap: 50px;
+   margin: 0;
+   padding: 0;
+   align-items: center;
+}
+
+.menu a {
+   display: flex;
+   font-weight: 400;
+   font-size: 17px; /* Tamaño de fuente ajustado */
+}
+
+.menu-mobile {
+   border-top: 1px solid rgba(192, 192, 192, 0.632);
+   width: 100%;
+   display: none;
+   transition: 0.2s display ease-out;
+   justify-content: end;
+   padding: 0;
+   margin: 0;
+   visibility: none;
+}
+
+.menu-mobil-wrap {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1rem;
+   padding: 1rem 2.5rem;
+   padding-bottom: 2rem;
+   background-color: rgba(192, 192, 192, 0.237);
+}
+
+
+/*Media queries para el diseño Responsibe */
+@media screen and (max-width: 991px) {
+   .topbar .container {
+      justify-content: space-around;
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .topbar .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+   }
+
+   .icon-menu {
+      display: block;
+   }
+
+   .nav {
+      justify-content: space-between;
+      padding: 10px 1.2rem;
+   }
+
+   .menu {
+      display: none;
+   }
+
+   .menu-mobile {
+      display: flex;
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.5s ease-in-out, visibility 0.2s ease-in-out;
+   }
+}
+
+@media screen and (max-width: 405px) {
+   .top-contact {
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+   }
+}
+
+ul {
+   list-style-type: none;
+}
