@@ -1,0 +1,47 @@
+.container3{
+    display: flex;
+    background-image: url(../assets/img/foto8.jpg);
+}
+
+
+.formulario{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 90px;
+    width:440px;
+    background: #aed6f1 ;
+    padding: 30px;
+    margin-block-end: 20px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    border-radius: 40px;
+}
+
+.textcuerpo3{
+    width: 50%;
+    display: flex;
+    font-size: 50px;
+    font-weight: 270;
+    line-height: 1;
+    text-align: right;
+    margin-right: 80px;
+    margin-top: 70px;
+}
+
+h3{
+    font-size: 15px;
+    
+}
+
+.formulario input[type="text"],
+.formulario input[type="date"]{
+    width: 300px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid  #2471a3 ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: #aed6f1;
+    margin-bottom: 10px;
+  }

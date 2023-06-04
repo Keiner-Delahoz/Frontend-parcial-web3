@@ -2,6 +2,7 @@ import "../../styles/Cuerpo_uno.css";
 import foto1 from "../../assets/img/foto4.jpg";
 const Cuerpo_uno = () => {
   return (
+    
     <div className="elemenCuerpo">
       
       <div className="imgCuerpo">
