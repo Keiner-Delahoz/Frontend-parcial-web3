@@ -2,9 +2,7 @@ import "../../styles/Cuerpo_uno.css";
 import foto1 from "../../assets/img/foto4.jpg";
 const Cuerpo_uno = () => {
   return (
-    
     <div className="elemenCuerpo">
-      
       <div className="imgCuerpo">
         <img src={foto1} className="d-block w-100" alt="..." />
       </div>
@@ -16,6 +14,9 @@ const Cuerpo_uno = () => {
           brindar atención de calidad y cuidado compasivo a mis pacientes. Me
           gradué con honores de la Universidad de Medicina de renombre, donde
           adquirí conocimientos sólidos y habilidades clínicas excepcionales.
+        </p>
+
+        <p className="parrafo">
           Con más de una década de experiencia en medicina, he trabajado en
           diversos entornos, desde hospitales de primer nivel hasta clínicas
           comunitarias, lo que me ha permitido enfrentar una amplia gama de

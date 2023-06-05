@@ -1,21 +1,21 @@
 .elemenCuerpo{
     display: flex;
+    margin-bottom: 50px;
 }
 
 .nomDoc{
     display: flex;
     width: 60%;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .imgCuerpo{
     width: 400%;
     display: flex;
-    margin-top: 10%;
+    margin-top: 5%;
     
 }
 
 .parrafo{
-   width: 70%;
-
+   width: 80%;
 }
