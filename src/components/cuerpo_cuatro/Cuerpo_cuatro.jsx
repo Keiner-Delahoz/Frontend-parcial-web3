@@ -9,11 +9,11 @@ const Cuerpo_tres = () => {
         </div>
       </div>
 
-      <div class="container text-center">
-        <div class="row">
-          <div class="col">56942780995</div>
-          <div class="col">contacto@saludycuidadocl</div>
-          <div class="col">Calle Nombre 123, BRQ Colombia</div>
+      <div className="container text-center">
+        <div className="row">
+          <div className="col">56942780995</div>
+          <div className="col">contacto@saludycuidadocl</div>
+          <div className="col">Calle Nombre 123, BRQ Colombia</div>
         </div>
       </div>
     </div>

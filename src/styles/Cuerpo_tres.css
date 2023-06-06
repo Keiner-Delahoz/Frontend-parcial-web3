@@ -16,6 +16,9 @@
     color: white;
     box-shadow: 7px 13px 37px #000;
     border-radius: 40px;
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .textcuerpo3{
@@ -39,10 +42,8 @@ h3{
 .formulario input[type="date"]{
     width: 300px;
     padding: 5px;
-    border-radius: 20px;
-    border: 2px solid  #2471a3 ;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
-    color: #aed6f1;
+    color: #000000;
     margin-bottom: 10px;
   }
