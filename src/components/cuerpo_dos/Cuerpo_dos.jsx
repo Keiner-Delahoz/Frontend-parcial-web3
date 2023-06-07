@@ -1,41 +1,24 @@
-import foto1 from "../../assets/img/foto5.jpg";
-import foto2 from "../../assets/img/foto6.jpg";
-
+import Cards from "../cards/Cards";
+import foto5 from "../../assets/img/foto5.jpg";
+import foto6 from "../../assets/img/foto6.jpg";
+import foto7 from "../../assets/img/foto7.jpg";
 import "../../styles/Cuerpo_dos.css";
 
 const Cuerpo_dos = () => {
   return (
     <div className="container2">
-        
-      <div className="primero">
-      <img src={foto1} className="imgcuerpo1" alt="..." />
-        <h1>CUIDADO DE ENFERMOS</h1>
-        <p className="parrafo2">
-          Instlaracion de sondas nasogastricas <br />
-          Sonda Foley <br />
-          Tratamientos y cuidados paleativos <br />
-          Apoyo sanitario <br />
-          Alimentacion y movilizacion de adultos <br />
-          tratamientos <br />
-          Aseo, higiene y confort <br />
-          Seguridad del paciente <br /> Cuidadoras
-        </p>
-      </div>
-
-      <div className="segundo">
-      <img src={foto2} className="imgcuerpo2" alt="..." />
-        <h1>CUIDADO DE ADULTOS MAYORES</h1>
-        <p className="parrafo2">
-          Curaciones <br />
-          Extraccion de puntos <br />
-          Cuidados pie diabeticos <br />
-          Escaras o ulceras en pacientes postrados <br />
-          Cuidados postquirurgicos <br />
-          Administracion de tratamientos endovenosos <br />
-          Instramusculares <br />
-          Subcutaneo <br />
-          Manejo de gastronomia <br />
-        </p>
+      <div className="container d-flex justify-content-center align-items-center h-100">
+        <div className="row">
+          <div className="col-md-4">
+            <Cards image={foto5} title="CUIDADO DE ENFERMOS" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ducimus dolores, tenetur doloremque odio officia dicta maiores nobis? Quidem repellat deserunt perspiciatis officiis! Temporibus earum numquam quaerat doloribus mollitia dolores"/>
+          </div>
+          <div className="col-md-4">
+            <Cards image={foto6} title="CUIDADO DE ADULTOS MAYORES" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ducimus dolores, tenetur doloremque odio officia dicta maiores nobis? Quidem repellat deserunt perspiciatis officiis! Temporibus earum numquam"/>
+          </div>
+          <div className="col-md-4">
+            <Cards image={foto7} title="CUIDADO DE NIÑOS" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ducimus dolores, tenetur doloremque odio officia dicta maiores nobis? Quidem repellat deserunt perspiciatis officiis! Temporibus earum numquam quaerat doloribus mollitia dolores"/>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -6,14 +6,13 @@
 .nomDoc{
     display: flex;
     width: 60%;
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
 .imgCuerpo{
-    width: 400%;
+    width: 350%;
     display: flex;
     margin-top: 5%;
-    
 }
 
 .parrafo{

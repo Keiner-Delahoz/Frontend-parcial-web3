@@ -1,21 +1,22 @@
 import { useState } from "react";
 import "../../styles/Cuerpo_tres.css";
+// import Form from "../form/Form";
 
 const Cuerpo_tres = () => {
   const [nombre,setNombre] = useState("");
   const [email,setEmail] = useState("");
   const [descripcion,setDescripcion] = useState("");
 
-  function actualizarInput (e){
-    setNombre(e.target.value)
-    console.log (nombre);
-  }
+//   function actualizarInput (e){
+//     setNombre(e.target.value)
+//     console.log (nombre);
+//   }
   function mostrarTodo(){
     console.log(nombre,email,descripcion);
 
   }
   return (
-
+      // <Form/>
     <div className="container3">
 
       <div className="formulario">

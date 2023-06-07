@@ -10,7 +10,7 @@ import Header from './components/header/Header'
 function App() {
 
   return (
-   <div className='containerfluid'>
+   <div className='App containerfluid'>
       <Header/>
       {/* <NavBar/> */}
       <Carousel/>
