@@ -1,7 +1,9 @@
 import "../../styles/Form.css";
 import { useState } from "react";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
-
+const alert = withReactContent(Swal)
 
 const Form = () => {
 
@@ -9,7 +11,7 @@ const Form = () => {
    const [email,setEmail] = useState("");
    const [descripcion,setDescripcion] = useState("");
 
-   const enviarDatos = () => {
+   const save = () => {
       console.log(nombre,email,descripcion);
       const consulta = {
          nombre: nombre,
@@ -28,13 +30,20 @@ const Form = () => {
    })
       .then((response) => {
          if(response.ok) {
-            alert("Los datos se han INSERTADO correctamente")
+            alert.fire(
+               'Bien hecho!',
+               'Tu consulta ha sido guardada',
+               'success'
+            )
             setNombre("");
             setEmail("");
             setDescripcion("");
-            // window.location.href = rutaDeseada;
          } else {
-            alert("ERROR!!!!! los datos NO se han insertado")
+            alert.fire({
+               icon: 'error',
+               title: 'Oops...',
+               text: 'A ocurrido un error, inserta los datos!',
+             })
          }})
       .catch((error) => console.error(error));
    }
@@ -59,9 +68,9 @@ const Form = () => {
             <textarea type="text" className="form-control" id="descripcion" placeholder="Descripción:" rows="3" required value={descripcion} onChange={e=>{setDescripcion(e.target.value)}}></textarea>
          </div>
          
-         <input type="submit" value="Enviar" id="enviar" className="btn" onClick={(e)=>{
+         <input type="submit" value="Enviar" id="enviar" className="btn boton" onClick={(e)=>{
             e.preventDefault()
-            enviarDatos()
+            save()
           }}></input>
 
       </form>

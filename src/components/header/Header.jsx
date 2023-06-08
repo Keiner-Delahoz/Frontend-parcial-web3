@@ -30,7 +30,7 @@ const Header = () => {
             <div className="justify-content-end">
                <ul className="menu">
                   <li>
-                     <Link to="/home">INICIO</Link>
+                     <Link to="/">INICIO</Link>
                   </li>
 
                   <li>
@@ -47,8 +47,6 @@ const Header = () => {
                   <li>
                      <div className="btn-group">
                         <button
-                           // id="btnGroupDrop1"
-                           // type="button"
                            className="btn bg-primary dropdown-toggle"
                            data-bs-toggle="dropdown"
                            aria-expanded="false"
@@ -57,7 +55,7 @@ const Header = () => {
                         </button>
                         <ul className="dropdown-menu" aria-labelledby="btnGroupDrop1">
                            <li>
-                              <Link to="/consultas">Consultas</Link>
+                              <Link to="/consultas"><a className="dropdown-item">Ver consultas</a></Link>
                            </li>
                         </ul>
                      </div>
