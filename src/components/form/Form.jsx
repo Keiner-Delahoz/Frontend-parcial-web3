@@ -1,34 +1,71 @@
 import "../../styles/Form.css";
+import { useState } from "react";
+
+
 
 const Form = () => {
-  return (
-    <form autoComplete="off">
-      <h3>Bienvenido</h3>
 
-      <div className="input-group">
+   const [nombre,setNombre] = useState("");
+   const [email,setEmail] = useState("");
+   const [descripcion,setDescripcion] = useState("");
 
-        <div className="input-container">
-          <input type="text" name="name" placeholder="Nombre" />
-          <i className="fa-solid fa-user"></i>
-        </div>
+   const enviarDatos = () => {
+      console.log(nombre,email,descripcion);
+      const consulta = {
+         nombre: nombre,
+         email: email,
+         descripcion: descripcion
+      }
 
-        <div className="input-container">
-          <input type="email" name="email" placeholder="Email" />
-          <i className="fa-solid fa-envelope"></i>
-        </div>
+      let valores = JSON.stringify(consulta);
 
-        <div className="input-container">
-          <textarea type="text" name="descripcion" placeholder="Descripcion" />
-          <i className="fa-solid fa-comment"></i>
-        </div>
-        <br/>
-        <a href="#">Terminos y Condiciones</a>
+      fetch(`http://localhost:8080/consultas`, {
+      method: 'POST',
+      headers: {
+         'Content-Type': 'application/json'
+      },
+      body: valores,
+   })
+      .then((response) => {
+         if(response.ok) {
+            alert("Los datos se han INSERTADO correctamente")
+            setNombre("");
+            setEmail("");
+            setDescripcion("");
+            // window.location.href = rutaDeseada;
+         } else {
+            alert("ERROR!!!!! los datos NO se han insertado")
+         }})
+      .catch((error) => console.error(error));
+   }
 
-        <input type="submit" name="send" className="buttom" value="Enviar"/>
+   return (
+      <form className="formulario" id="form" >
+         <div className="mb-4">
+            <h4>
+               Entréganos los datos relevantes para tu consulta y te responderemos lo más pronto posible.
+            </h4>
+         </div>
+         
+         <div className="mb-4">
+            <input type="text" className="form-control" id="nombre" placeholder="Nombre:" required value={nombre} onChange={e=>{setNombre(e.target.value)}}/>
+         </div>
+         
+         <div className="mb-4">
+            <input type="email" className="form-control" id="email" placeholder="Email:" required value={email} onChange={e=>{setEmail(e.target.value)}}/>
+         </div>
+         
+         <div className="mb-4">
+            <textarea type="text" className="form-control" id="descripcion" placeholder="Descripción:" rows="3" required value={descripcion} onChange={e=>{setDescripcion(e.target.value)}}></textarea>
+         </div>
+         
+         <input type="submit" value="Enviar" id="enviar" className="btn" onClick={(e)=>{
+            e.preventDefault()
+            enviarDatos()
+          }}></input>
 
-      </div>
-    </form>
-  );
+      </form>
+   );
 };
 
 export default Form;

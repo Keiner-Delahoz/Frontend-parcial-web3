@@ -1,4 +1,3 @@
-// import foto5 from "../../assets/img/foto5.jpg";
 import PropTypes from 'prop-types';
 import "../../styles/Cards.css";
 

@@ -6,7 +6,7 @@ import "../../styles/Cuerpo_dos.css";
 
 const Cuerpo_dos = () => {
   return (
-    <div className="container2">
+    <div className="container2" id="cuerpo_dos">
       <div className="container d-flex justify-content-center align-items-center h-100">
         <div className="row">
           <div className="col-md-4">

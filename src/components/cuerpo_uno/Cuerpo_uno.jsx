@@ -1,14 +1,15 @@
 import "../../styles/Cuerpo_uno.css";
 import foto1 from "../../assets/img/foto4.jpg";
+
 const Cuerpo_uno = () => {
   return (
-    <div className="elemenCuerpo">
+    <div className="elemenCuerpo" id="cuerpo_uno">
       <div className="imgCuerpo">
         <img src={foto1} className="d-block w-100" alt="..." />
       </div>
 
       <div>
-        <h1 className="nomDoc">Dr. Angelica Medina</h1>
+        <h2 className="nomDoc">Dr. Angelica Medina</h2>
         <p className="parrafo">
           ¡Hola! Soy la Dra. Angélica, una apasionada médica comprometida con
           brindar atención de calidad y cuidado compasivo a mis pacientes. Me

@@ -1,34 +1,32 @@
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+.formulario {
+   width: 400px;
+   padding: 30px;
+   background-color: rgba(0, 0, 0, 0.7);
 }
 
-form {
-   background-color: #f5f5f5;
-   padding: 50px;
-   width: 420px;
-   text-align: center;
-   box-shadow: 0 0 20px rgba(0, 0, 0, 2);
+h4 {
+   font-size: 20px;
 }
 
-form h2 {
-   font-size: 25px;
-   color: #1e1e1e;
-   text-transform: uppercase;
-   margin-bottom: 35px;
+.formulario input[type="text"],
+.formulario input[type="date"],
+.formulario input[type="email"],
+.formulario textarea[type="text"],
+.form-floating {
+   padding: 9px;
+   font-family: 'Roboto', Arial, sans-serif;
+   font-size: 18px;
+   color: #000000;
+   resize: none;
 }
 
-.input-container {
-   position: relative;
-}
-
-.input-container > i {
-   padding: 14px;
-   border-radius: 50%;
-   background: linear-gradient(
-      90deg,
-      rgba(153,26,123,1) 0%,
-      rgba(117,30,156,1) 50%,
-   );
+.btn {
+   background-color: #F64637;
+   color: white;
+   padding: 5px 25px;
+   border: none;
+   border-radius: 5px;
+   font-size: 16px;
+   font-weight: bold;
+   cursor: pointer;
 }

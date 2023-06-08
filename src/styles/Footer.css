@@ -1,0 +1,68 @@
+.footer {
+   color: white;
+   background-color: #000000;
+   display: flex;
+   justify-content: center;
+   padding: 10px;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+}
+
+p a {
+   text-decoration: underline;
+   color: white;
+   transition: .3s text-decoration ease-out;
+   transition: .3s color ease-in;
+   
+}
+
+p a:hover {
+   text-decoration: none;
+   color: rgba(140, 144, 151, 0.904);
+}
+
+.legal {
+   margin-bottom: 0;
+   color: white;
+   text-align: center;
+}
+
+.wrapper1 {
+   margin-top: 10px;
+ }
+
+.wrapper1 ul li {
+   /* width: 40px; */
+   /* height: 40px; */
+   /* line-height: 35px; */
+   margin: 0 8px;
+   /* text-align: center; */
+   cursor: pointer;
+   border-radius: 50%;
+   /* border: 3px solid #ffffff; */
+   float: left;
+   transition: all 0.5s ease;
+}
+
+.wrapper1 ul li .fa-brands {
+   /* padding: 5px; */
+   font-size: 20px;
+   width: 30px;
+   /* height: 10px; */
+   color: #ffffff;
+   /* margin-top: 0px; */
+   transition: all 0.5s ease;
+}
+
+/* .wrapper1 ul li:hover.facebook {
+   border: 5px solid #3b5998;
+   box-shadow: 0 0 15px #3b5998;
+   transition: all 0.5s ease;
+} */
+
+/* .wrapper1 ul li:hover .fa-facebook {
+  color:  #3b5998;
+   text-shadow: 0 0 15px #3b5998;
+   transition: all 0.2s ease;
+} */

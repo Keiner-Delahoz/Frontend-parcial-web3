@@ -1,0 +1,60 @@
+.custom-caption {
+   position: absolute;
+   top: 35%;
+   left: 50%;
+   transform: translate(-90%, -50%);
+   text-align: center;
+}
+
+.custom-title1 {
+   color: #1a203f;
+}
+.custom-title2 {
+   color: #1a203f;
+   font-size: 70px;
+   font-weight: bold;
+}
+
+.custom-description {
+   color: #1a203f;
+   font-size: 20px;
+}
+
+.wrapper ul {
+   list-style: none;
+   padding: 0px;
+   margin: 15px;
+}
+
+.wrapper ul li {
+   width: 75px;
+   height: 75px;
+   text-align: center;
+   border-radius: 50%;
+   border: 5px solid #1a203f;
+   display: inline-block;
+   margin-right: 40px;
+}
+
+.wrapper ul li .fa-solid {
+   font-size: 45px;
+   width: 60px;
+   color: #1a203f;
+   margin-top: 12px;
+}
+
+.carousel-caption a {
+   text-decoration: none;
+   display: inline-block;
+   padding: 8px;
+   margin-top: 5px;
+   color: #1a203f;;
+   border: 1px solid #1a203f;;
+   border-radius: 4px;
+   transition: all 400ms ease;
+}
+
+.carousel-caption a:hover {
+   background: #1a203f;;
+   color: #fff;
+}

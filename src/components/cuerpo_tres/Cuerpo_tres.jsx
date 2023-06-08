@@ -1,25 +1,26 @@
-import { useState } from "react";
 import "../../styles/Cuerpo_tres.css";
-// import Form from "../form/Form";
+import Form from "../form/Form";
 
 const Cuerpo_tres = () => {
-  const [nombre,setNombre] = useState("");
-  const [email,setEmail] = useState("");
-  const [descripcion,setDescripcion] = useState("");
 
-//   function actualizarInput (e){
-//     setNombre(e.target.value)
-//     console.log (nombre);
-//   }
-  function mostrarTodo(){
-    console.log(nombre,email,descripcion);
-
-  }
   return (
-      // <Form/>
-    <div className="container3">
+    <div className="container-fluid" id="cuerpo_tres">
+       <div className="container">
+         <div className="row align-items-center h-100 ">
+            <div className="col-md-6">
+               <Form/>
+            </div>
+            <div className="col-md-6 text-right text-justify">
+               <h1>Te responderemos a la brevedad, no dudes en escribirnos!</h1>  
+            </div>
+         </div>
+      </div>
 
-      <div className="formulario">
+
+
+
+
+      {/* <div className="formulario">
         <form className="furmulario" id="from_busqueda">
           <h3>
             Entreganos los datos relevantes para tu consulta y te responderemos
@@ -45,7 +46,7 @@ const Cuerpo_tres = () => {
 
       <div className="textcuerpo3">
             <b>Te responderemos a la brevedad, no duces en escribirnos!</b>   
-      </div>
+      </div> */}
     </div>
   );
 };

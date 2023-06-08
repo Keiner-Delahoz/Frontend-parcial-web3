@@ -1,24 +1,25 @@
-.Containercuerpo{
-    background-color: rgb(0, 71, 99);
-    font-size: 23px;
+.Containercuerpo {
+   background-color: rgb(0, 71, 99);
+   font-size: 23px;
+   overflow: hidden
 }
 
 
-.contactanos{
-    text-align: center;
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-    
+.contactanos {
+   text-align: center;
+   width: 100%;
+   display: block;
+   margin-bottom: 20px;
+
 }
 
-h5{
-    font-size: 70px;
-    color: white;
-    letter-spacing: -1px;
-    font-weight: 600;
+h5 {
+   font-size: 70px;
+   color: white;
+   letter-spacing: -1px;
+   font-weight: 600;
 }
 
-.row{
-    color: white;
+.row {
+   color: white;
 }

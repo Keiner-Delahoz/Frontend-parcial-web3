@@ -1,25 +1,24 @@
 import './App.css'
-// import NavBar from './components/navbar/NavBar'
-import Carousel from './components/carousel/Carousel'
-import Cuerpo_uno from './components/cuerpo_uno/Cuerpo_uno'
-import Cuerpo_dos from './components/cuerpo_dos/Cuerpo_dos'
-import Cuerpo_tres from './components/cuerpo_tres/Cuerpo_tres'
-import Cuerpo_cuatro from './components/cuerpo_cuatro/Cuerpo_cuatro'
 import Header from './components/header/Header'
+import Footer from './components/footer/Footer1'
+import { Routes, Route } from 'react-router-dom'
+// import Cuerpo_dos from './components/cuerpo_dos/Cuerpo_dos'
+import Home from './views/home'
+import Tables from './components/tables/Table'
+// import { Route, BrowserRouter as Router } from 'react-router-dom'
 
 function App() {
 
   return (
-   <div className='App containerfluid'>
+   <div>
+      
       <Header/>
-      {/* <NavBar/> */}
-      <Carousel/>
-      <Cuerpo_uno/>
-      <Cuerpo_dos/>
-      <Cuerpo_tres/>
-      <Cuerpo_cuatro/>
+      <Routes>
+         <Route path='/home'element={<Home/>}></Route>
+         <Route path='/consultas'element={<Tables/>}></Route>
+      </Routes>
+      <Footer/>
    </div>
-    
   )
 }
 
